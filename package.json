@@ -1,0 +1,33 @@
+{
+    "name": "cryptonote-util",
+    "version": "1.0.0",
+    "main": "cryptonote",
+    "contributors": [
+        {
+            "name": "LucasJones",
+            "email": "lucasjonesdev@hotmail.co.uk"
+        },
+        {
+            "name": "IPBC-Dev",
+            "email": "hello@ipbc.io",
+            "url": "https://github.com/ipbc-dev/"
+        },
+        {
+            "name": "HOSP",
+            "email": "support@hospitalcoin.net",
+            "url": "https://github.com/HospitalCoin"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/HospitalCoin/node-cryptonote-util.git"
+    },
+    "dependencies": {
+        "bindings": "*",
+        "nan": "^2.10.0"
+    },
+    "keywords": [
+        "cryptonight",
+        "cryptonote"
+    ]
+}
