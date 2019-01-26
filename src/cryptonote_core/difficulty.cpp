@@ -101,7 +101,14 @@ namespace cryptonote {
     if (high != 0 || low + time_span - 1 < low) {
       return 0;
     }
-    return (low + time_span - 1) / time_span;
+
+	uint64_t nextDiffZ = (low + time_span - 1) / time_span;
+	// minimum limit
+	if (nextDiffZ <= 100000) {
+		nextDiffZ = 100000;
+	}
+
+	return nextDiffZ;
   }
 
   difficulty_type next_difficulty(vector<uint64_t> timestamps, vector<difficulty_type> cumulative_difficulties)
